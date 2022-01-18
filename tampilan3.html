@@ -1,0 +1,136 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POPULAR THIS WEEK</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        
+        #header {
+            background-color: #800000;
+            position: sticky;
+            top: 0;
+        }
+        
+        #header h1 a {
+            float: left;
+            padding: 11px 0;
+            color: white;
+            text-decoration: none;
+        }
+        
+        #header ul {
+            float: right;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        .container:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        #header ul li {
+            display: inline-block;
+        }
+        
+        #header ul li a {
+            display: inline-block;
+            padding: 20px 20px;
+            text-decoration: none;
+            color: white;
+        }
+        
+        #header ul li a:hover {
+            background-color: white;
+            color: #800000;
+        }
+        
+        #header ul li a.active {
+            background-color: #800000;
+            color: white;
+        }
+        
+        #judul {
+            text-align: center;
+            color: white;
+            font-size: 150%;
+            padding-top: 15vh;
+        }
+        
+        #konten {
+            height: 93vh;
+            background-image: "./assets/yoy.jpg";
+            background-position: center;
+            background-size: cover;
+            background-color: #080808
+        }
+        
+        #gambar {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 10vh;
+        }
+        
+        img {
+            height: 370px;
+            width: 250px;
+            border-radius: 15px;
+        }
+        
+        img:hover {
+            transform: translateY(-8%);
+            transition: 0.7s;
+        }
+        
+        #footer {
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            background-color: #800000;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <h1>
+                <a href="tampilan.html">Movie App</a>
+            </h1>
+            <ul>
+                <li><a href="tampilan3.html" class="active">POPULAR THIS WEEK</a></li>
+                <li><a href="tampilan2.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="konten">
+        <div id="judul">
+            <h1>POPULAR THIS WEEK</h1>
+        </div>
+        <div id="gambar">
+            <a href="squidgame.html"><img src="./img/squidgame.jpg" alt="squidgame" /></a>
+            <a href="fearstreet.html"><img src="./img/fearstreet.jpg" alt="fearstreet" /></a>
+            <a href="extracurricular.html"><img src="./img/extracurricular.jpg" alt="extracurricular" /></a>
+            <a href="myname.html"><img src="./img/myname.jpg" alt="myname" /></a>
+            <a href="sweethome.html"><img src="./img/sweethome.jpeg" alt="sweethome" /></a>
+        </div>
+    </div>
+    <div id="footer">
+        <h5>copyright by nusantech 2022</h5>
+    </div>
+</body>
+
+</html>
